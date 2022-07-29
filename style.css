@@ -1,4 +1,11 @@
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 .row .logo {
   align-self: center;
   text-align: center;
@@ -12,16 +19,19 @@
   width: 10vw;
   display: flex;
   justify-content: flex-start;
+  mix-blend-mode: multiply;
 }
 
-.main{
-  bottom: 0;
+.desktop-h {
+  color: #272a33;
 }
+
 .main-content h1,h3 {
   font-size: 60px;
   font-weight: 500px;
   color:  #ec5242af;
 }
+
 
 .description {
   border: 1px solid whitesmoke;
@@ -32,7 +42,6 @@
 
 
 .program  {
- 
   background-color: #272131f8;
   background-image: url('images/bg_mobile_program.png');
 }
@@ -112,6 +121,13 @@
 }
 
 @media (max-width:768px){
+.humburger {
+  height: 35%;
+  width: 35%;
+  padding: 15px;
+  cursor: pointer;
+}
+
   .main{
     background-image: url('images/bg_mobile_main.png');
     background-repeat: no-repeat;
@@ -121,21 +137,68 @@
     padding: 0% 5% 15% 5%;
   }
 
+.mobile-menu {
+  display: flex;
+  flex-flow: column;
+  background-color: #272a31bd;
+  height: 80vh;
+  width: 90%;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  pointer-events: all;
+  user-select: inherit;
+}
+.mobile-menu a {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 400;
+  text-decoration: none;
+   margin: 20px 30px;
+}
 
+.mobile-menu a:hover {
+  color: aqua;
+}
+
+.cancel {
+  height: 30px;
+  width: 30px;
+  margin-top: 20px;
+   background-color: transparent;
+  color: #fff;
+}
 }
 
 @media (min-width:768px){
-  .main {
+  .mobile-nav {
+    display: none;
+  }
+
+  /*.main {
     background-image: url('images/bg_desktop_main.png');
       background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     display: flex;
     flex-flow: column;
     padding: 0% 5% 15% 5%;
-
-  }
-  .main-content {
     margin-top: 100px;
+    background-position: center;
+  }*/
+ 
+.main {
+  width: 100%;
+  background-image: url('images/bg_desktop_main.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 100px;
+   padding: 0% 5% 0% 5%;
+}
 
-  }
+
+  
 }

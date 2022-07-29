@@ -25,13 +25,13 @@
         </nav>
       </header>
       <div class=" d-none d-md-block bg-light text-dark container-fluid px-5 py-3 shadow">
-        <div class="row header">
+        <div class="row">
           <div class="col-4 d-flex align-items-center justify-content-center logo">
             <a href="index.html" class="d-flex flex-column">
               <img src="images/AI-logo.png" class="logo-1" alt="logo">
             </a>
           </div>
-          <div class="col-8 d-flex align-items-center justify-content-center gap-5 mb-10">
+          <div class="col-8 d-flex align-items-center justify-content-center gap-5 mb-10 desktop-h">
             <a href="about.html" class="mx-2  a-link">About</a>
             <a href="" class="mx-2  a-link">Program</a>
             <a href="" class="mx-2  a-link">Join</a>
@@ -41,23 +41,26 @@
           </div>
         </div>
       </div>
-      <div class="d-block d-md-none ">
+      <div class=" d-md-none humburger">
         <img src="images/mobile_menu.png" alt="">
       </div>
     </div>
-    <section class="sidebar">
-      <div class="sidebar-inner">
-        <div class="sidebar-cancel">
+    <section class="mobile_nav">
+      <div class="mobile-nav-inner">
+        <div class="menu-cancel">
           <button class="cancel" type="button">&times;</button>
         </div>
-        <div class="sidebar-menu">
+        <div class="mobile-menu">
           <a href="index.html" class="anchor-link">Home</a>
           <a href="About.html" class="anchor-link">About</a>
           <a href="#program" class="anchor-link">Program</a>
+          <a href="#join" class="anchor-link">join</a>
+          <a href="#sponcer" class="anchor-link">sponcer</a>
+          <a href="#news" class="anchor-link">news</a>
         </div>
       </div>
     </section>
-    <section class="container-fluid main-content py-0">
+    <section class="container-fluid main-content">
       <div class="welcome py-5">
         <h3>"welcome to future tech"</h3>
         <div class="mx-0">
@@ -75,7 +78,7 @@
       </div>
     </section>
   </div>
-  <section class="program mt-4 py-5 mb-4">
+  <section class="program mt-4 py-5 mb-4" id="program">
     <h4 class="title-prog text-center text-light">main program</h4>
     <div class="horizontal-line mb-4"></div>
     <div class="row  d-flex justify-content-center">
@@ -141,7 +144,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="join" id="join">
         <p class="text-light text-center">See the whole Programm</p>
         <div class="text-light text-center">join us</div>
       </div>
@@ -149,7 +152,7 @@
   <section class="speakrs container-fluid">
 
   </section>
-  <section class="partner">
+  <section class="partner" id="sponcer">
     <div class="py-4  mx-0 mb-3">
       <h4 class="text-center text-light">Partners</h4>
       <div class="horizontal-line "></div>
@@ -187,7 +190,7 @@
           <span><b>Confrance</b></span>
         </div>
       </div>
-      <div class="col-6 col-md-8 d-flex justify-content-start">
+      <div class="col-6 col-md-8 d-flex justify-content-start" id="news">
         <h5 class="text-capitalize ml-5">2022 creative common. some right reserverd</h5>
       </div>
     </div>
