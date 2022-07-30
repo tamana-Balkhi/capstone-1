@@ -72,7 +72,7 @@
   max-width: 100%;
   padding: 0.5rem;
   font-family: sans-serif,'Lato';
-
+  font-size: 20px;
 }
 
 
@@ -328,13 +328,16 @@
     font-size: 1rem;
   }
 
+  
+
+
   .h3-hello {
     font-size: 1.5rem;
     font-weight: 400;
   }
 
   .display-paragraph {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 
   .display-h2 {
@@ -347,48 +350,69 @@
     font-weight: 500;
   }
 
-.mobile-menu {
+  .mobile-v {
+    display: flex;
+  }
+
+   #hamburger {
+    cursor: pointer;
+  }
+
+#mobilemenu {
   display: flex;
   flex-flow: column;
   background-color: #6b6766af;
-  height: 80vh;
-  width: 90%;
-  z-index: 10;
-  position: fixed;
   top: 0;
-  left: 0;
-  bottom: 0;
-  margin-top: 70px;
+    left: 0;
+    gap: 12px;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    text-align: left;
+    transition: 0.3s;
+    margin: 0;
+  display: none;
 }
-.mobile-menu a {
+
+#mobilemenu li {
   font-family: 'Lato', sans-serif;
   color: #fff;
   font-size: 19px;
   font-weight: 400;
   text-decoration: none;
    margin: 20px 30px;
+   list-style-type: none;
 }
 
-.mobile-menu a:hover {
+#mobilemenu a:hover {
   color: aqua;
 }
 
-.menu-cancel {
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+    font-weight: 500;
+}
+
+.img-container {
   display: flex;
   align-items: center;
   justify-content: flex-end;
- 
+   width: 88%;
+    margin: 20px auto;
 }
 .cancel {
   height: 30px;
   width: 30px;
   margin-top: 20px;
   color: #fff;
-   background-color: #424347;
 }
-#hide {
-  display: none;
-}
+
+.menu li {
+    margin-top: 20px;
+    font-size: 22px;
+  }
 
   .icon {
     font-size: 1.5rem;
@@ -414,21 +438,11 @@ footer {
 }
 
 @media (min-width:768px){
-  .mobile-nav-inner {
+  
+  .mobile-header {
     display: none;
   }
 
-  /*.main {
-    background-image: url('images/bg_desktop_main.png');
-      background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-flow: column;
-    padding: 0% 5% 15% 5%;
-    margin-top: 100px;
-    background-position: center;
-  }*/
- 
 .main {
   width: 100%;
   background-image: url('images/bg_desktop_main.png');
