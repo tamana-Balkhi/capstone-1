@@ -1,3 +1,32 @@
+const mobileHamburger = document.getElementById('hamburger');
+const closeIcon = document.getElementById('cancel');
+const mobileM = document.querySelector('.hide');
+const mobilemenu = document.querySelector('#mobilemenu');
+
+function openMenu() {
+  mobileM.style.display = 'block';
+}
+
+function closeMenu() {
+  mobileM.style.display = 'none';
+}
+
+function closemobileHamburger() {
+  mobileHamburger.style.display = "none"
+}
+
+mobileHamburger.addEventListener('click', openMenu);
+mobileHamburger.addEventListener('click', closemobileHamburger);
+closeIcon.addEventListener('click', closeMenu);
+
+mobilemenu.addEventListener('click', () => {
+  mobileM.style.display = 'none';
+  mobileHamburger.style.display = 'block';
+});
+
+
+
+
 const speakersSection = document.querySelector('#featured-speakers .container-fluid');
 const speakersArr = [
   {
@@ -67,7 +96,7 @@ function createspeakersSection() {
       document.querySelector(`.speaker${i + 1}`).classList.add('toggle');
     }
   }
-  speakersSection.innerHTML += '<div id="more">More <a href="#featured-speakers"><i class="fas fa-chevron-down"></i></a></div>';
+  speakersSection.innerHTML += '<div id="more">show<a href="#featured-speakers"><i class="fas fa-chevron-down"></i></a></div>';
 }
 
 createspeakersSection();
@@ -80,8 +109,8 @@ more.addEventListener('click', () => {
     speaker[i].classList.toggle('toggle');
   }
   if (speaker[2].classList.contains('toggle')) {
-    more.innerHTML = "<i class='fas fa-chevron-down'></i>";
+    more.innerHTML = " more";
   } else {
-    more.innerHTML = "<i class='fas fa-chevron-up'></i>";
+    more.innerHTML = " less";
   }
 });
