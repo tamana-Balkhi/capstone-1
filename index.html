@@ -41,16 +41,18 @@
           </div>
         </div>
       </div>
-      <div class=" d-md-none humburger">
-        <img src="images/mobile_menu.png" alt="" id="hamburger">
-      </div>
-    </div>
-    <section class="mobile_nav">
-      <div class="mobile-nav-inner" class="hide">
-        <div class="menu-cancel" id="hide">
-          <button class="hide cancel" type="button">&times;</button>
+      <!--<div class="d-block d-md-none">
+        <div class="d-flex flex-column justify-content-start mx-4 toggle-button mt-4 ">
+
         </div>
-        <div class="mobile-menu" id="hide">
+      </div>-->
+    </div>
+    <!--<section class="mobile_nav">
+      <div class="mobile-nav-inner" class="hide">
+        <div class="menu-cancel">
+          <button class="cancel" type="button">&times;</button>
+        </div>
+        <div class="mobile-menu">
           <a href="index.html" class="anchor-link">Home</a>
           <a href="About.html" class="anchor-link">About</a>
           <a href="#program" class="anchor-link">Program</a>
@@ -59,7 +61,25 @@
           <a href="#news" class="anchor-link">news</a>
         </div>
       </div>
-    </section>
+    </section>-->
+    <nav class=" mobile-header">
+      <div class="mobile-v nav-bar">
+        <div>
+          <img src="./images/mobile_menu.png" id="hamburger" alt="hamburger icon" />
+        </div>
+      </div>
+      <div id="mobilemenu" class="hide m-List">
+        <div class="img-container">
+          <img src="./images/cancel.png" class="cancel" id="cancel" alt="" />
+        </div>
+        <ul class="menu">
+          <li id="m-h1" class="Links"><a href="about.html">about</a></li>
+          <li id="m-h2" class="Links"><a href="#program">program</a></li>
+          <li id="m-h3" class="Links"><a href="#join">join</a></li>
+          <li id="m-h3" class="Links"><a href="#partner">sponcer</a></li>
+        </ul>
+      </div>
+    </nav>
     <section class="container-fluid main-content">
       <div class="welcome py-5">
         <h3 class="h3-hello">"welcome to future tech"</h3>
