@@ -22,16 +22,43 @@
   mix-blend-mode: multiply;
 }
 
-.desktop-h {
+
+.a-link {
+  color: #272a31;
+  text-decoration: none;
+}
+
+.a-link:active {
+  color: #ec5242;
+}
+
+.a-link:hover {
+  color: #ec5242;
+}
+
+.a-link:focus {
+  color: #ec5242;
+}
+
+.link-red {
+  border: 2px solid #ec5242;
+  padding: 1rem;
+}
+.desktop-h  a {
   color: black;
 }
 
 .main-content h1,h3 {
   font-size: 60px;
   font-weight: 500px;
-  color:  #ec5242af;
+  color:  #b93422af;
 }
 
+.welcome {
+   max-width: 80%;
+  margin-top: 10em;
+  margin-left: 10vw;
+}
 
 .description {
   border: 1px solid whitesmoke;
@@ -73,6 +100,11 @@
   border: 2px solid #fff;
 }
 
+.program .icon {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 0.7rem;
+}
 
 .card h5 {
   color: #ec5242;
@@ -100,7 +132,7 @@
   display: block;
 }
   .partner {
-  background-color: #272a33;
+  background-color: #424347;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -178,6 +210,8 @@
 }
 
 
+
+
 @media (max-width:768px){
 .humburger {
   height: 35%;
@@ -199,7 +233,7 @@
     font-size: 1rem;
   }
 
-  .display-hello {
+  .h3-hello {
     font-size: 1.5rem;
     font-weight: 400;
   }
@@ -217,7 +251,6 @@
     font-size: 1rem;
     font-weight: 500;
   }
-}
 
 .mobile-menu {
   display: flex;
@@ -252,10 +285,29 @@
   margin-top: 20px;
   color: #fff;
 }
-.past-events button:hover {
-  filter: grayscale(100%);
+
+  .icon {
+    font-size: 1.5rem;
+  } 
+
+footer {
+  position: relative;
+  width: 100%;
 }
 
+.footer-about {
+   background: #272a31;
+  color: #d3d3d3;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.logo-2 img {
+  width:40vw;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+}
 
 @media (min-width:768px){
   .mobile-nav-inner {
@@ -289,9 +341,28 @@
     justify-content: center;
   }
 
+  .logo-2 img {
+  width:30vw;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
   .buttons-container button {
     width: 40%;
     height: 300px;
     margin: 15px;
   }
+
+.footer-about{
+  background: #272a31;
 }
+
+.footer-about {
+  color: #d3d3d3;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+}
+
