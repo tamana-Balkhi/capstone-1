@@ -12,7 +12,7 @@ function closeMenu() {
 }
 
 function closemobileHamburger() {
-  mobileHamburger.style.display = "none"
+  mobileHamburger.style.display = 'none';
 }
 
 mobileHamburger.addEventListener('click', openMenu);
@@ -23,9 +23,6 @@ mobilemenu.addEventListener('click', () => {
   mobileM.style.display = 'none';
   mobileHamburger.style.display = 'block';
 });
-
-
-
 
 const speakersSection = document.querySelector('#featured-speakers .container-fluid');
 const speakersArr = [
@@ -109,8 +106,8 @@ more.addEventListener('click', () => {
     speaker[i].classList.toggle('toggle');
   }
   if (speaker[2].classList.contains('toggle')) {
-    more.innerHTML = " more";
+    more.innerHTML = ' more';
   } else {
-    more.innerHTML = " less";
+    more.innerHTML = ' less';
   }
 });
