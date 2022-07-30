@@ -209,9 +209,6 @@
   filter: grayscale(100%);
 }
 
-
-
-
 @media (max-width:768px){
 .humburger {
   height: 35%;
@@ -255,7 +252,7 @@
 .mobile-menu {
   display: flex;
   flex-flow: column;
-
+  background-color: #6b6766af;
   height: 80vh;
   width: 90%;
   z-index: 10;
@@ -265,6 +262,7 @@
   bottom: 0;
   pointer-events: all;
   user-select: inherit;
+  margin-top: 70px;
 }
 .mobile-menu a {
   font-family: 'Lato', sans-serif;
@@ -279,6 +277,11 @@
   color: aqua;
 }
 
+.menu-cancel {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 .cancel {
   height: 30px;
   width: 30px;
