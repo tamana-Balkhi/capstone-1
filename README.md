@@ -3,7 +3,7 @@
 AI conference, castone-1
 
 ## Live Demo
-visit me here:
+visit me here:https://tamana-balkhi.github.io/capstone-1/
 
 ## Built With
 - html
@@ -15,7 +15,7 @@ visit me here:
 - JavaScript
 
 ## Link to video
-
+[video link](https://www.loom.com/share/f26424c9ccf94d0781db3224def056cc)
 
 
 To get a local copy up and running follow these simple example steps.
